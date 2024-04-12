@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詐欺サイト模倣</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .popup-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #video-container {
+            text-align: center;
+        }
+
+        #registration-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        #registration-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #registration-form input[type="text"],
+        #registration-form input[type="email"],
+        #registration-form input[type="tel"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        #registration-form input[type="submit"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-container" id="age-confirmation">
+        <div class="popup">
+            <p>あなたは18歳以上の成人ですか？</p>
+            <button onclick="noClicked()">いいえ</button>
+            <button onclick="yesClicked()">はい</button>
+        </div>
+    </div>
+
+    <div id="video-container" style="display:none;">
+        <button id="video-button" onclick="showRegistrationForm()">動画を再生</button>
+    </div>
+
+    <footer>
+        <p>2024 Sample site</p>
+    </footer>
+
+    <div id="registration-form" style="display:none;">
+        <h2>会員登録フォーム</h2>
+        <form id="registration-form">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">電話番号:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="account">口座番号:</label>
+            <input type="text" id="account" name="account" required>
+            <input type="submit" value="送信">
+        </form>
+    </div>
+
+    <script>
+        function noClicked() {
+            alert("10秒後にGoogleにジャンプします。");
+            setTimeout(function () {
+                window.location.href = "https://www.google.com";
+            }, 10000);
+        }
+
+        function yesClicked() {
+            document.getElementById("age-confirmation").style.display = "none";
+            document.getElementById("video-container").style.display = "block";
+        }
+
+        function showRegistrationForm() {
+            alert("ご利用ありがとうございます。");
+            document.getElementById("video-container").style.display = "none";
+            document.getElementById("registration-form").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
