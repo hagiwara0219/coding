@@ -15,3 +15,4 @@ add この文章
 0710今日のタスクを追加
 predatorの使い方とタスクを追加
 0716stask 追加
+0719tasks=github作成アンドkndサイトの解析、面談
