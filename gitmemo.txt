@@ -16,4 +16,11 @@ add この文章
 predatorの使い方とタスクを追加
 0716stask 追加
 0719tasks=github作成アンドkndサイトの解析、面談
-0722taskadd
+0722taskadd→
+
+※※vimでここからは編集しているよ※※
+
+0722マクドナルドで編集、predator,git追加
+
+
+0820task
