@@ -25,3 +25,9 @@ predatorの使い方とタスクを追加
 
 0820task
 0827HBDtaskAdd
+今日のタスク
+●医療券(済)
+●github追加(済)
+●predator(済)
+
+0829taskUpdate
