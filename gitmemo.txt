@@ -31,3 +31,6 @@ predatorの使い方とタスクを追加
 ●predator(済)
 
 0829taskUpdate
+0904task
+手紙を書く,
+手紙を送る、pradator　itpass
