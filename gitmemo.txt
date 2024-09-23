@@ -34,3 +34,6 @@ predatorの使い方とタスクを追加
 0904task
 手紙を書く,
 手紙を送る、pradator　itpass
+0911tas
+0911task
+0923taskupdate
