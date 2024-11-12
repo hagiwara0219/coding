@@ -44,3 +44,4 @@ sakura0924
 1108taskup
 ↑今日は15:30に来た、いまからメモで進捗をつたえて、predtorをやって終了、あとgitもupする
 
+1112taskup
